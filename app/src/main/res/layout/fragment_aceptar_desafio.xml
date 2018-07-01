@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6b3e3d3d"
+    >
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        android:outlineProvider="bounds"
+        android:clipToPadding="false">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardViewTinder"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#000"
+            app:cardCornerRadius="4dp"
+            android:elevation="2dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/title_vs"
+                    android:text="vs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/tv_nombreDeEquipo_aDesafiar"
+                    android:textSize="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignBaseline="@+id/tv_nombreDeEquipo_aDesafiar"/>
+                <TextView
+                    android:id="@+id/tv_nombreDeEquipo_aDesafiar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cruz Del Sur"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/tv_confirmacion"
+                    android:layout_below="@+id/tv_nombreDeEquipo_aDesafiar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="ya no falta nada, confirma los siguientes datos y empieza a jugar!"/>
+
+                <TextView
+                    android:id="@+id/tv_diaAJugar"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/tv_confirmacion"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:text="Dia a jugar"
+                    />
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/light_gray"
+                    android:textSize="20dp"
+                    android:layout_toRightOf="@id/tv_diaAJugar"
+                    android:layout_alignBaseline="@id/tv_diaAJugar"
+                    android:id="@+id/tv_fechadia"
+                    android:text="22/00/00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+
+                    android:id="@+id/tv_horarios"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@+id/tv_diaAJugar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Horarios Disponibles (elegí dos)"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp"
+                    />
+                <Button
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+
+                    android:id="@+id/bttn_horario1"
+                    android:layout_below="@+id/tv_horarios"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_gray"
+                    android:textColor="@color/border_gray"
+                    android:textAllCaps="false"
+                    android:text="12:00 hs"/>
+                <Button
+                    android:layout_toRightOf="@id/bttn_horario1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textAllCaps="false"
+                    android:layout_alignBottom="@+id/bttn_horario1"
+                    android:id="@+id/bttn_horario2"
+                    android:layout_width="90dp"
+                    android:background="@drawable/btn_gray"
+                    android:textColor="@color/border_gray"
+                    android:layout_height="wrap_content"
+                    android:text="12:00 hs"/>
+                <Button
+                    android:id="@+id/bttn_horario3"
+                    android:layout_toRightOf="@+id/bttn_horario2"
+                    android:layout_alignBottom="@+id/bttn_horario2"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_gray"
+                    android:textAllCaps="false"
+                    android:textColor="@color/border_gray"
+                    android:text="12:00 hs"/>
+
+                <Button
+                    android:id="@+id/bttn_confirmar_recib"
+                    android:text="confirmar"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/bttn_horario3"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/btn_blue"
+                    android:textColor="@color/lighter_gray"
+                    android:textAllCaps="false"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="@dimen/text_size_default"
+                    />
+                <Button
+                    android:id="@+id/bttn_cancelar_recib"
+                    android:text="cancelar"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/bttn_horario1"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="@dimen/text_size_default"
+                    android:background="@drawable/btn_gray"
+                    android:layout_marginBottom="20dp"
+                    android:textAllCaps="false"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/login_blue"/>
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</FrameLayout>

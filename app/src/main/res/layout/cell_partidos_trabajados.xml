@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp">
+
+    <RelativeLayout
+        android:id="@+id/header_partidosTrabajados_frag"
+        android:layout_width="match_parent"
+        android:background="#39949393"
+        android:layout_height="80dp">
+        <TextView
+            android:id="@+id/hidden_challengeidText"
+            android:layout_width="1dp"
+            android:layout_height="1dp" />
+
+        <TextView
+            android:id="@+id/tv_numeroDeDesafio_partidosTrabajados_arbitro"
+            android:text="Desafío 70"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/tv_fechaYHora_partidosTrabajados"
+            android:text="27/07/18 - 20:00 HS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_numeroDeDesafio_partidosTrabajados_arbitro"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"/>
+
+        <Button
+            android:id="@+id/bttn_crearResumen_partidosTrabajados_arbitro"
+            android:text="Crear Resumen"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_rounded_blue"
+            android:textSize="@dimen/text_size_default"
+            android:textColor="@color/white"/>
+        <Button
+            android:id="@+id/bttn_verResumen_partidosTrabajados_arbitro"
+            android:text="Ver resumen"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_rounded_gray"
+            android:textSize="@dimen/text_size_default"
+            android:textColor="@color/login_blue"/>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

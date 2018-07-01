@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/desafios_arbitro"
+            android:title="Desafios"
+
+            />
+        <item
+            android:id="@+id/partidos_arbitro"
+            android:title="Partidos" />
+        <item
+            android:id="@+id/ranking_arbitro"
+            android:title="Ranking" />
+        <item
+            android:id="@+id/ganancias_arbitro"
+            android:title="Ganancias" />
+    </group>
+
+    <item android:title="">
+        <menu>
+
+            <item
+                android:id="@+id/cuenta_arbitro"
+                android:icon="@drawable/ic_cuenta"
+                android:title="Mi cuenta" />
+
+        </menu>
+    </item>
+</menu>

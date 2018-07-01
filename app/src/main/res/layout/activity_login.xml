@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingPrefix"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_players"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_xxxlarge"
+        android:layout_marginRight="@dimen/margin_xxxlarge"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/applogo" />
+
+        <EditText
+            android:id="@+id/login_email_edit_text"
+            fontPath="@string/font.poppins_light"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height_default"
+            android:layout_marginTop="@dimen/margin_small"
+            android:backgroundTint="@color/lighter_gray"
+            android:hint="@string/login_email_hint"
+            android:inputType="textEmailAddress"
+            android:text="coll.ramiro@gmail.com"
+            android:textColor="@color/lighter_gray"
+            android:textColorHint="@color/lighter_gray"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/text_size_default"
+            android:theme="@style/EditTextMaterialCursor">
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/login_password_edit_text"
+            fontPath="@string/font.poppins_light"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height_default"
+            android:layout_marginTop="@dimen/margin_large"
+            android:backgroundTint="@color/lighter_gray"
+            android:hint="@string/login_password_hint"
+            android:inputType="textPassword"
+            android:text="passwd"
+            android:textColor="@color/lighter_gray"
+            android:textColorHint="@color/lighter_gray"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/text_size_default"
+            android:theme="@style/EditTextMaterialCursor" />
+
+        <TextView
+            android:id="@+id/login_tv_recover_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            fontPath="@string/font.poppins_light"
+            android:text="@string/login_recover_password"
+            android:textColor="@color/lighter_gray"
+            android:textSize="@dimen/text_size_default" />
+
+        <Button
+            android:id="@+id/login_btn_submit"
+            fontPath="@string/font.poppins_light"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height_default"
+            android:layout_marginTop="@dimen/margin_default"
+            android:background="@drawable/btn_blue"
+            android:textAllCaps="false"
+            android:text="@string/login_submit"
+            android:textColor="@color/lighter_gray"
+            android:textSize="@dimen/text_size_default" />
+
+        <TextView
+            fontPath="@string/font.poppins_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:text="@string/login_other_account"
+            android:textColor="@color/lighter_gray"
+            android:textSize="@dimen/text_size_default" />
+
+        <Button
+            android:id="@+id/login_btn_facebook"
+            fontPath="@string/font.poppins_light"
+            android:layout_width="match_parent"
+            android:textAllCaps="false"
+            android:layout_height="@dimen/button_height_default"
+            android:background="@drawable/btn_login_facebook"
+            android:text="@string/login_facebook_submit"
+            android:textColor="@color/lighter_gray"
+            android:textSize="@dimen/text_size_default" />
+
+        <Button
+            android:id="@+id/login_btn_create_account"
+            fontPath="@string/font.poppins_light"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height_default"
+            android:layout_marginTop="@dimen/margin_large"
+            android:background="@drawable/btn_login_create"
+            android:text="@string/login_create_account"
+            android:textAllCaps="false"
+            android:textColor="@color/lighter_gray"
+            android:textSize="@dimen/text_size_default" />
+    </LinearLayout>
+
+
+</RelativeLayout>

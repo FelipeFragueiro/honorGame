@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.appaloossa.honorgame.View.activity.Capitan.EquipoActivity">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="80dp"
+        android:id="@+id/input_layout_nombreEquipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editText_nombreDeEquipo"
+            android:layout_width="200dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:hint="Nombre de equipo"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:textColor="@color/login_blue"
+        android:id="@+id/tv_count_jugadores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:text="Jugador0"/>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/editText_nombreYapellido"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Nombre y Apellido"/>
+
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/editText_dni"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="DNI"/>
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/editText_mail"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Mail"/>
+
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/bttn_agregarJugador"
+        android:layout_marginTop="40dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_blue"
+        android:textColor="@color/lighter_gray"
+        android:textSize="@dimen/text_size_default"
+        android:text="Agregar jugador"
+        android:textAllCaps="false"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/button_siguiente"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="siguiente"/>
+
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "354345206999",
+    "firebase_url": "https://honor-game.firebaseio.com",
+    "project_id": "honor-game",
+    "storage_bucket": "honor-game.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:354345206999:android:4d293398b5f2fbe8",
+        "android_client_info": {
+          "package_name": "com.appaloossa.honorgame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "354345206999-jr6tqbr5shiecvqulmhm2nf0r7jsp7u4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appaloossa.honorgame",
+            "certificate_hash": "55c1c7f12ad15ed03d1e9a9d9c1db59c6e41a96f"
+          }
+        },
+        {
+          "client_id": "354345206999-pobu559qajinbtlosi49arvs53uaoq3n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9-tV9PIiSNvLV0vCLNDXL1uDUH1sP8Mo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "354345206999-82s1vbbph7q1u3cgik4bsgrmssmetptj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.appaloossa.Honor-Game"
+              }
+            },
+            {
+              "client_id": "354345206999-pobu559qajinbtlosi49arvs53uaoq3n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

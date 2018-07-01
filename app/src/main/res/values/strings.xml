@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Honor Game</string>
+
+    <!--Fonts-->
+    <string name="font.poppins_bold" translatable="false">fonts/Poppins-Bold.ttf</string>
+    <string name="font.poppins_light" translatable="false">fonts/Poppins-Light.ttf</string>
+    <string name="font.poppins_medium" translatable="false">fonts/Poppins-Medium.ttf</string>
+    <string name="font.poppins_regular" translatable="false">fonts/Poppins-Regular.ttf</string>
+    <string name="font.poppins_semibold" translatable="false">fonts/Poppins-SemiBold.ttf</string>
+
+    <!--Generic Strings-->
+    <string name="generic_dialog_message_loading">Cargando...</string>
+    <string name="generic_dialog_button_ok">Aceptar</string>
+
+    <!--Login Strings-->
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Contraseña</string>
+    <string name="login_recover_password">Recuperar contraseña</string>
+    <string name="login_submit">Ingresar</string>
+    <string name="login_facebook_submit">Ingresar con Facebook</string>
+    <string name="login_other_account">o con tu cuenta de</string>
+    <string name="login_create_account">¿No tenés cuenta? Creala.</string>
+    <string name="login_dialog_message_auth_failed">No se ha podido autenticar al usuario, por favor intente nuevamente.</string>
+
+    <!--Sign Up Strings-->
+    <string name="sign_up_title_radio">¿Cuál será tu rol?</string>
+    <string name="sign_up_captain">Capitán/DT</string>
+    <string name="sign_up_journalist">Periodista</string>
+    <string name="sign_up_referee">Arbitro</string>
+    <string name="sign_up_team_men">Futbol 5 Masculino</string>
+    <string name="sign_up_team_woman">Futbol 5 Femenino</string>
+    <string name="sign_up_which_kind_team">¿Qué tipo de equipo representarás?</string>
+    <string name="sign_up_personal_data">Tus datos personales</string>
+    <string name="sign_up_name_hint">Nombre y apellido</string>
+    <string name="sign_up_email_hint">Mail</string>
+    <string name="sign_up_dni_hint">DNI</string>
+    <string name="sign_up_password_hint">Contraseña</string>
+    <string name="sign_up_confirm_password_hint">Repetir contraseña</string>
+    <string name="sign_up_set_up_your_team">¡Es hora de armar tu equipo!</string>
+    <string name="sign_up_cancel">Cancelar</string>
+    <string name="sign_up_next">Siguiente</string>
+    <string name="sign_up_submit">Aceptar</string>
+
+
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_partidos">PartidosActivity</string>
+    <string name="title_activity_equipo">EquipoActivity</string>
+    <string name="title_activity_equipo_armado">EquipoArmadoActivity</string>
+    <string name="title_activity_ranking">RankingActivity</string>
+    <string name="title_activity_resumen_arbitro">ResumenArbitroActivity</string>
+
+</resources>

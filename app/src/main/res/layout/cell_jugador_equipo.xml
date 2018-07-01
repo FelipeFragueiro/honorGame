@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/item_container">
+
+    <TextView
+        android:id="@+id/tv_nombre_jugador"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:text="Pablito "
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/light_gray"
+        android:textSize="20dp" />
+    <Button
+        android:layout_marginTop="10dp"
+
+        android:id="@+id/bttn_verMas"
+        android:layout_toLeftOf="@+id/bttn_nota"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bttn_blue_border"
+        android:textColor="@color/login_blue"
+        android:textAllCaps="false"
+        android:textSize="@dimen/text_size_default"
+        android:text="ver más"/>
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+
+        android:id="@+id/bttn_nota"
+        android:src="@drawable/ic_edit"
+        android:layout_toLeftOf="@+id/bttn_eliminar"
+        android:layout_marginLeft="20dp"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        />
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/bttn_eliminar"
+        android:scaleType="centerCrop"
+        android:text="x"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/ic_eliminar"
+        android:layout_alignParentEnd="true"
+        android:layout_width="40dp"
+        android:layout_height="50dp" />
+
+
+</RelativeLayout>

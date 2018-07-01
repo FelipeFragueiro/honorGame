@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6b3e3d3d"
+    >
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        android:outlineProvider="bounds"
+        android:clipToPadding="false">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardViewTinder"
+            android:layout_width="330dp"
+
+            android:layout_height="310dp"
+            android:layout_gravity="center"
+            android:background="#000"
+            app:cardCornerRadius="4dp"
+            android:elevation="2dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/title_vs_confirmar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/tv_nombreDeEquipo_aDesafiar"
+                    android:layout_alignBaseline="@+id/tv_nombreDeEquipo_aDesafiar"
+                    android:text="vs"
+                    android:textSize="15dp"
+                    />
+            <TextView
+                android:id="@+id/tv_nombreDeEquipo_aDesafiar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Cruz Del Sur"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/tv_confirmacion"
+                android:layout_below="@+id/tv_nombreDeEquipo_aDesafiar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="ya no falta nada, confirma los siguientes datos y empieza a jugar!"/>
+
+                <ImageView
+                    android:id="@+id/imageView_calendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tv_diaAJugar"
+                    android:layout_toStartOf="@+id/edittext_hora2"
+                    android:src="@drawable/ic_date" />
+
+                <EditText
+                    android:id="@+id/editText_fecha"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                     />
+                <TextView
+                    android:id="@+id/tv_diaAJugar"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@+id/tv_confirmacion"
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:text="Dia a jugar"
+                    />
+
+                <TextView
+                    android:id="@+id/horarios_disponibles"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@+id/tv_diaAJugar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Horarios Disponibles"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="15dp"
+                    />
+                <EditText
+                    android:id="@+id/edittext_hora1"
+                    android:hint="Hora 1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@id/horarios_disponibles"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/edittext_hora2"
+                    android:hint="Hora 2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/horarios_disponibles"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/edittext_hora3"
+                    android:hint="Hora 3"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@id/horarios_disponibles"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content" />
+                
+
+                <Button
+                    android:id="@+id/bttn_confirmar"
+                    android:text="confirmar"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/btn_blue"
+                    android:textColor="@color/lighter_gray"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/text_size_default"
+                    android:layout_alignParentRight="true"/>
+                <Button
+                    android:id="@+id/bttn_cancelar"
+                    android:text="cancelar"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:textSize="@dimen/text_size_default"
+                    android:background="@drawable/btn_gray"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/login_blue"
+                    android:layout_alignParentLeft="true"/>
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</FrameLayout>

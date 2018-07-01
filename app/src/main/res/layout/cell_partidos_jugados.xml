@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/circulo"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/circulo"/>
+            <TextView
+                android:text="G"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_toRightOf="@+id/circulo"
+            android:id="@+id/tv_resultado_jugado"
+            android:text="1-1"
+            android:textColor="#454343"
+            android:textSize="@dimen/text_size_action_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/tv_nombre_equipo_jugado"
+            android:text="equipo"
+            android:textColor="#454343"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_size_action_bar"
+            android:layout_centerVertical="true"
+            />
+        <Button
+            android:id="@+id/bttn_nota_ver"
+            android:text="ver resumen"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_rounded_gray"
+            android:textSize="@dimen/text_size_default"
+            android:textColor="@color/login_blue"
+            android:layout_alignRight="@id/tv_nombre_equipo_jugado"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.appaloossa.honorgame.View.fragments.Arbitro.Desafio.Partidos.PartidosTrabajadosFragment">
+    <RelativeLayout
+        android:id="@+id/header_partidosTrabajados_frag"
+        android:layout_width="match_parent"
+        android:background="#39949393"
+        android:layout_height="80dp">
+
+    <TextView
+        android:text="Desafíos"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_centerVertical="true"/>
+    <TextView
+        android:text="Nota"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_partidos_trabajados_arbitro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header_partidosTrabajados_frag">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

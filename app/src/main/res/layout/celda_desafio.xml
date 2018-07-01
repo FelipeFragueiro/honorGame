@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+
+
+    <LinearLayout
+        android:id="@+id/container_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#70f1f0f0">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp">
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp">
+
+                <TextView
+                    android:id="@+id/tv_nombreDeEquipo"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:text="Walter dada"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="#ce595858"
+                    android:textSize="20dp"
+                    />
+                <TextView
+                    android:id="@+id/tv_id"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/title_reputation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reputación"
+                    android:textSize="15dp"
+                    android:visibility="visible"
+                    />
+
+                <RatingBar
+                    android:id="@+id/ratingbar_desafio"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:numStars="5"
+                    android:progressTint="@color/yellow" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvUbicacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:layout_toLeftOf="@+id/ivType"
+                android:layout_marginEnd="15dp"
+                android:text="Lanus"
+                android:textSize="14dp"
+                android:layout_marginRight="10dp"
+                 />
+            <ImageView
+                android:layout_toLeftOf="@+id/tvUbicacion"
+                android:src="@drawable/ic_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/ivType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="3dp"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp">
+
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/circle_victoria"
+            android:layout_marginLeft="15dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circulo" >
+            <TextView
+                android:id="@+id/tv_victorias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#07ed16"
+                android:layout_centerInParent="true"
+                android:text="10 V"/>
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_toRightOf="@id/circle_victoria"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/circle_derrota"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_derrotas" >
+            <TextView
+                android:id="@+id/tv_derrotas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff0b0b"
+                android:text="9 D"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_toRightOf="@id/circle_derrota"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/circle_empate"
+            android:layout_width="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_empate" >
+            <TextView
+                android:id="@+id/tv_empates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 E"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+            <Button
+                android:id="@+id/button_desafiarOrechazar"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_blue"
+                android:text="desafiar"
+                android:textAllCaps="false"
+                android:textColor="@color/lighter_gray"
+                android:textSize="@dimen/text_size_default"
+                />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

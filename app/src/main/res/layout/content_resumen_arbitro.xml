@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.appaloossa.honorgame.View.activity.Arbitro.ResumenArbitroActivity"
+    tools:showIn="@layout/activity_resumen_arbitro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f0f0f0">
+
+            <TextView
+                android:id="@+id/tv_numeroDeDesafio_crearResumen_arbitro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desafio 70"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/tv_nombreDeEquipo1_crearResumen_arbitro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_numeroDeDesafio_crearResumen_arbitro"
+                android:layout_marginTop="20dp"
+                android:text="Revolution Team" />
+
+            <TextView
+                android:id="@+id/tv_nombreDeEquipo2_crearResumen_arbitro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/bttn_restarNumeroGol_Equipo2_crearResumen"
+                android:layout_below="@+id/tv_nombreDeEquipo1_crearResumen_arbitro"
+                android:layout_marginTop="25dp"
+                android:text="Locos Del Sur" />
+        <RelativeLayout
+            android:id="@+id/tv_numeroDeGoles_equipo1_crearResumen_arbitro_relative"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+
+            android:background="@drawable/round_rectangle"
+            android:layout_alignBaseline="@+id/bttn_añadirNumeroGol_Equipo1_crearResumen"
+            >
+            <TextView
+                android:id="@+id/tv_numeroDeGoles_equipo1_crearResumen_arbitro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:text="0"
+                android:textColor="#ffff" />
+
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tv_numeroDeGoles_equipo2_crearResumen_arbitro_relative"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_marginBottom="20dp"
+                android:layout_alignBaseline="@+id/bttn_añadirNumeroGol_Equipo2_crearResumen"
+                android:layout_alignBottom="@+id/bttn_añadirNumeroGol_Equipo2_crearResumen"
+                android:layout_toEndOf="@+id/bttn_añadirNumeroGol_Equipo1_crearResumen"
+                android:background="@drawable/round_rectangle">
+
+                <TextView
+                    android:id="@+id/tv_numeroDeGoles_equipo2_crearResumen_arbitro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="10dp"
+                    android:text="0"
+                    android:textColor="#ffff" />
+            </RelativeLayout>
+            <Button
+                android:id="@+id/bttn_añadirNumeroGol_Equipo1_crearResumen"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_nombreDeEquipo1_crearResumen_arbitro"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/tv_numeroDeGoles_equipo1_crearResumen_arbitro_relative"
+                android:text="+" />
+
+            <Button
+                android:id="@+id/bttn_restarNumeroGol_Equipo1_crearResumen"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_nombreDeEquipo1_crearResumen_arbitro"
+                android:layout_toLeftOf="@+id/bttn_añadirNumeroGol_Equipo1_crearResumen"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/bttn_añadirNumeroGol_Equipo2_crearResumen"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bttn_añadirNumeroGol_Equipo1_crearResumen"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/tv_numeroDeGoles_equipo2_crearResumen_arbitro_relative"
+                android:text="+" />
+
+            <Button
+                android:id="@+id/bttn_restarNumeroGol_Equipo2_crearResumen"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/bttn_añadirNumeroGol_Equipo2_crearResumen"
+                android:layout_toLeftOf="@+id/bttn_añadirNumeroGol_Equipo2_crearResumen"
+                android:text="-" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title_amonestaciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Amonestaciones" />
+
+            <TextView
+                android:id="@+id/tv_nombreDeEquipo1_amonestaciones_crearResumen_arbitro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_amonestaciones"
+                android:layout_marginLeft="20dp"
+                android:text="locos de los andes" />
+
+            <TextView
+                android:id="@+id/tv_numeroDeAmonestaciones_Rojas_crearResumen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/bttn_añadirNumeroAmonestacionRoja_Equipo1_crearResumen"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/bttn_añadirNumeroAmonestacionRoja_Equipo1_crearResumen"
+                android:text="0"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/tv_numeroDeAmonestaciones_Amarillas_crearResumen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/bttn_añadirNumeroAmonestacionAmarilla_Equipo1_crearResumen"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="0"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/bttn_añadirNumeroAmonestacionRoja_Equipo1_crearResumen"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/tv_nombreDeEquipo1_amonestaciones_crearResumen_arbitro"
+                android:layout_below="@+id/tv_nombreDeEquipo1_amonestaciones_crearResumen_arbitro"
+                android:layout_marginTop="15dp"
+                android:text="+" />
+
+            <Button
+                android:id="@+id/bttn_restarNumeroAmonestacionRoja_Equipo1_crearResumen"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+
+                android:layout_alignBaseline="@+id/bttn_añadirNumeroAmonestacionRoja_Equipo1_crearResumen"
+                android:layout_toLeftOf="@+id/bttn_añadirNumeroAmonestacionRoja_Equipo1_crearResumen"
+
+                android:text="-" />
+
+            <Button
+                android:id="@+id/bttn_añadirNumeroAmonestacionAmarilla_Equipo1_crearResumen"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/bttn_añadirNumeroAmonestacionRoja_Equipo1_crearResumen"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:text="+"
+
+                />
+
+            <Button
+                android:id="@+id/bttn_restarNumeroAmonestacionAmarilla_Equipo1_crearResumen"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/bttn_añadirNumeroAmonestacionAmarilla_Equipo1_crearResumen"
+                android:layout_toLeftOf="@+id/bttn_añadirNumeroAmonestacionAmarilla_Equipo1_crearResumen"
+                android:text="-" />
+
+
+            <TextView
+                android:id="@+id/title_nombreYapellido_equipo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bttn_añadirNumeroAmonestacionRoja_Equipo1_crearResumen"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="nombre y apellido" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_amonestacionesEquipo1_crearResumen_arbitro"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/title_nombreYapellido_equipo1"
+                android:layout_marginTop="10dp"></android.support.v7.widget.RecyclerView>
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_nombreDeEquipo2_amonestaciones_crearResumen_arbitro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="locos de los andes" />
+
+            <TextView
+                android:id="@+id/tv_numeroDeAmonestaciones_equipo2_Rojas_crearResumen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/bttn_añadirNumeroAmonestacionRoja_Equipo2_crearResumen"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/bttn_añadirNumeroAmonestacionRoja_Equipo2_crearResumen"
+                android:text="0"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/tv_numeroDeAmonestaciones_equipo2_Amarillas_crearResumen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/bttn_añadirNumeroAmonestacionAmarilla_Equipo2_crearResumen"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:text="0"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/bttn_añadirNumeroAmonestacionRoja_Equipo2_crearResumen"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/tv_nombreDeEquipo2_amonestaciones_crearResumen_arbitro"
+                android:layout_below="@+id/tv_nombreDeEquipo2_amonestaciones_crearResumen_arbitro"
+                android:text="+" />
+
+            <Button
+                android:id="@+id/bttn_restarNumeroAmonestacionRoja_Equipo2_crearResumen"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/bttn_añadirNumeroAmonestacionRoja_Equipo2_crearResumen"
+                android:layout_toLeftOf="@+id/bttn_añadirNumeroAmonestacionRoja_Equipo2_crearResumen"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/bttn_añadirNumeroAmonestacionAmarilla_Equipo2_crearResumen"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/bttn_añadirNumeroAmonestacionRoja_Equipo2_crearResumen"
+                android:layout_toLeftOf="@+id/tv_numeroDeAmonestaciones_equipo2_Amarillas_crearResumen"
+                android:text="+"
+
+                />
+
+            <Button
+                android:id="@+id/bttn_restarNumeroAmonestacionAmarilla_Equipo2_crearResumen"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/bttn_añadirNumeroAmonestacionAmarilla_Equipo2_crearResumen"
+                android:layout_toLeftOf="@+id/bttn_añadirNumeroAmonestacionAmarilla_Equipo2_crearResumen"
+                android:text="-" />
+
+
+            <TextView
+                android:id="@+id/title_nombreYapellido_equipo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bttn_añadirNumeroAmonestacionRoja_Equipo2_crearResumen"
+                android:layout_marginTop="20dp"
+                android:text="nombre y apellido" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_amonestacionesEquipo2_crearResumen_arbitro"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/title_nombreYapellido_equipo2"
+                android:layout_marginTop="10dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <RelativeLayout
+                android:id="@+id/content_evaluacion_crearResumen_arbitro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/content_goleadores_crearResumen_arbitro"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/title_evaluacionDeEquipos_crearResumen_arbitro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Evaluación de equipos" />
+
+                <TextView
+                    android:id="@+id/tv_nombreEquipo1_evaluacion_crearResumen_arbitro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title_evaluacionDeEquipos_crearResumen_arbitro"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="20dp"
+                    android:text="alto Equipo" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar_evaluacionEquipo1_crearResumen_arbitro"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_nombreEquipo1_evaluacion_crearResumen_arbitro"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="50dp" />
+
+                <TextView
+                    android:id="@+id/tv_nombreEquipo2_evaluacion_crearResumen_arbitro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_nombreEquipo1_evaluacion_crearResumen_arbitro"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Alto Equipo2" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar_evaluacionEquipo2_crearResumen_arbitro"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_nombreEquipo2_evaluacion_crearResumen_arbitro"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="50dp"
+
+                    />
+            </RelativeLayout>
+            <Button
+                android:id="@+id/bttn_enviarResumenAFB"
+                android:layout_below="@+id/content_evaluacion_crearResumen_arbitro"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:layout_centerHorizontal="true"
+                android:text="enviar resumen"
+                android:background="@drawable/btn_blue"
+                android:textColor="@color/lighter_gray"
+                android:textSize="@dimen/text_size_default"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:id="@+id/content_goleadores_crearResumen_arbitro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recyclerView_amonestacionesEquipo2_crearResumen_arbitro">
+
+                <TextView
+                    android:id="@+id/title_goles_crearResumen_arbitro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Goles" />
+
+                <TextView
+                    android:id="@+id/tv_nombreEquipo1_goleadores_crearResumen_arbitro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title_goles_crearResumen_arbitro"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Alto equipo1" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView_goleadoresEquipo1_crearResumen_arbitro"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/tv_nombreEquipo1_goleadores_crearResumen_arbitro">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <TextView
+                    android:id="@+id/tv_nombreEquipo2_goleadores_crearResumen_arbitro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/recyclerView_goleadoresEquipo1_crearResumen_arbitro"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Alto equipo2" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView_goleadoresEquipo2_crearResumen_arbitro"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/tv_nombreEquipo2_goleadores_crearResumen_arbitro">
+
+                </android.support.v7.widget.RecyclerView>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

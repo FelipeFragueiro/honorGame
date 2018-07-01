@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@android:color/white">
+
+
+
+    <LinearLayout
+        android:id="@+id/container_item_recibido"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:id="@+id/fechaoculta"
+                android:textColor="@color/white"
+                android:layout_width="1dp"
+                android:layout_height="1dp" />
+            <TextView
+                android:id="@+id/time1oculto"
+                android:textColor="@color/white"
+                android:layout_width="1dp"
+                android:layout_height="1dp" />
+            <TextView
+                android:id="@+id/time2oculto"
+                android:textColor="@color/white"
+                android:layout_width="1dp"
+                android:layout_height="1dp" />
+            <TextView
+                android:id="@+id/time3oculto"
+                android:textColor="@color/white"
+                android:layout_width="1dp"
+                android:layout_height="1dp" />
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp">
+
+                <TextView
+                    android:id="@+id/tv_nombreDeEquipoRecibido"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:text="Walter dada"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="#ce595858"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/title_reputacion_recibido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reputación"
+                    android:textSize="15dp"
+                    android:visibility="visible"
+                    />
+                <RatingBar
+                    android:id="@+id/ratingbar_desafio_recibido"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:progressTint="@color/yellow"
+
+                    android:layout_height="wrap_content"
+                    android:numStars="5"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvUbicacionRecibido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:layout_toLeftOf="@+id/ivType"
+                android:layout_marginEnd="10dp"
+                android:text="Lanus"
+                android:textSize="14dp"
+
+                android:layout_marginRight="15dp"
+                />
+            <ImageView
+                android:layout_toLeftOf="@id/tvUbicacionRecibido"
+                android:src="@drawable/ic_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/ivType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="3dp"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+        <FrameLayout
+            android:layout_marginTop="-30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp">
+
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/circle_victoria"
+            android:layout_marginLeft="15dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:background="@drawable/circulo" >
+            <TextView
+                android:id="@+id/tv_victorias_recibidos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#07ed16"
+                android:layout_centerInParent="true"
+
+                android:text="10 V"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/circle_derrota"
+            android:layout_marginLeft="15dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/circle_victoria"
+            android:background="@drawable/circle_derrotas" >
+            <TextView
+                android:id="@+id/tv_derrotas_recibidos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff0b0b"
+                android:text="9 D"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/circle_derrota"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/circle_empate"
+            android:layout_marginLeft="15dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:background="@drawable/circle_empate" >
+            <TextView
+                android:id="@+id/tv_empates_recibidos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 E"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+            <Button
+                android:id="@+id/button_aceptar_recibido"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="aceptar"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/btn_blue"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/lighter_gray"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_size_default"
+                android:layout_alignParentRight="true"/>
+
+            <Button
+                android:id="@+id/button_desafiarOrechazar_recibido"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bttn_blue_border"
+                android:layout_below="@+id/button_aceptar_recibido"
+                android:textColor="@color/login_blue"
+                android:layout_marginBottom="20dp"
+                android:textSize="@dimen/text_size_default"
+                android:text="rechazar"
+                android:textAllCaps="false"
+                android:layout_alignParentRight="true"/>
+
+
+        </RelativeLayout>
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

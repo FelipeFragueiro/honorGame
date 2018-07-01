@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingPrefix"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:background="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/sign_up_tv_radio_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    fontPath="@string/font.poppins_light"
+                    android:text="@string/sign_up_title_radio"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/app_cyan"
+                    android:textSize="@dimen/text_size_dialog_title"
+                    android:layout_marginTop="@dimen/margin_xxlarge"
+                    android:layout_marginBottom="@dimen/margin_large"/>
+                <RadioGroup
+                    android:id="@+id/radiogroup"
+                    android:layout_below="@+id/sign_up_tv_radio_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_xlarge"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal"
+                    >
+                <LinearLayout
+                    android:layout_below="@id/sign_up_tv_radio_title"
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_xlarge"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_large">
+
+                        <RadioButton
+                            android:id="@+id/sign_up_radio_button_captain"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:button="@drawable/btn_radio_button"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:singleLine="true"
+                            android:id="@+id/sign_up_tv_captain"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            fontPath="@string/font.poppins_light"
+                            android:text="@string/sign_up_captain"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/lighter_gray"
+                            android:textSize="@dimen/text_size_default"
+                            android:layout_marginLeft="@dimen/margin_small"
+                            android:layout_toEndOf="@+id/sign_up_radio_button_captain" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_medium"
+                        android:layout_marginLeft="@dimen/margin_medium">
+
+                        <RadioButton
+                            android:id="@+id/sign_up_radio_button_journalist"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:button="@drawable/btn_radio_button"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:singleLine="true"
+                            android:id="@+id/sign_up_tv_journalist"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            fontPath="@string/font.poppins_light"
+                            android:text="@string/sign_up_journalist"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/lighter_gray"
+                            android:textSize="@dimen/text_size_default"
+                            android:layout_marginLeft="@dimen/margin_small"
+                            android:layout_toEndOf="@+id/sign_up_radio_button_journalist" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_large">
+
+                        <RadioButton
+                            android:id="@+id/sign_up_radio_button_referee"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:button="@drawable/btn_radio_button"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:singleLine="true"
+                            android:id="@+id/sign_up_tv_referee"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            fontPath="@string/font.poppins_light"
+                            android:text="@string/sign_up_referee"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/lighter_gray"
+                            android:textSize="@dimen/text_size_default"
+                            android:layout_marginLeft="@dimen/margin_small"
+                            android:layout_toEndOf="@+id/sign_up_radio_button_referee" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+    </RadioGroup>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/margin_xlarge"
+                android:layout_marginLeft="@dimen/margin_large"
+                android:layout_marginRight="@dimen/margin_large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    fontPath="@string/font.poppins_semibold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/sign_up_which_kind_team"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/text_size_large" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_large">
+
+                        <RadioButton
+                            android:id="@+id/sign_up_radio_button_team_men"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:button="@drawable/btn_radio_button" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:singleLine="true"
+                            android:id="@+id/sign_up_tv_men"
+                            fontPath="@string/font.poppins_light"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/margin_small"
+                            android:layout_toEndOf="@+id/sign_up_radio_button_team_men"
+                            android:text="@string/sign_up_team_men"
+                            android:textColor="@color/light_gray"
+                            android:textSize="@dimen/text_size_default" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_medium">
+
+                        <RadioButton
+                            android:id="@+id/sign_up_radio_button_team_woman"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:button="@drawable/btn_radio_button" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/sign_up_tv_girls"
+                            fontPath="@string/font.poppins_light"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/margin_small"
+                            android:layout_toEndOf="@+id/sign_up_radio_button_team_woman"
+                            android:text="@string/sign_up_team_woman"
+                            android:textColor="@color/light_gray"
+                            android:textSize="@dimen/text_size_default" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/margin_xlarge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        fontPath="@string/font.poppins_semibold"
+                        android:text="@string/sign_up_personal_data"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/light_gray"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <EditText
+                        android:id="@+id/sign_up_name_edit_text"
+                        fontPath="@string/font.poppins_light"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_height_default"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:backgroundTint="@color/light_gray"
+                        android:hint="@string/sign_up_name_hint"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/light_gray"
+                        android:textColorHint="@color/light_gray"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/text_size_default"
+                        android:theme="@style/EditTextMaterialCursor">
+
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/sign_up_email_edit_text"
+                        fontPath="@string/font.poppins_light"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_height_default"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:backgroundTint="@color/light_gray"
+                        android:hint="@string/sign_up_email_hint"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/light_gray"
+                        android:textColorHint="@color/light_gray"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/text_size_default"
+                        android:theme="@style/EditTextMaterialCursor"/>
+
+                    <EditText
+                        android:id="@+id/sign_up_dni_edit_text"
+                        fontPath="@string/font.poppins_light"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_height_default"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:backgroundTint="@color/light_gray"
+                        android:hint="@string/sign_up_dni_hint"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/light_gray"
+                        android:textColorHint="@color/light_gray"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/text_size_default"
+                        android:theme="@style/EditTextMaterialCursor"/>
+
+                    <EditText
+                        android:id="@+id/sign_up_password_edit_text"
+                        fontPath="@string/font.poppins_light"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_height_default"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:backgroundTint="@color/light_gray"
+                        android:hint="@string/sign_up_password_hint"
+                        android:inputType="textPassword"
+                        android:textColor="@color/light_gray"
+                        android:textColorHint="@color/light_gray"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/text_size_default"
+                        android:theme="@style/EditTextMaterialCursor"/>
+
+                    <EditText
+                        android:id="@+id/sign_up_confirm_password_edit_text"
+                        fontPath="@string/font.poppins_light"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_height_default"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:backgroundTint="@color/light_gray"
+                        android:hint="@string/sign_up_confirm_password_hint"
+                        android:inputType="textPassword"
+                        android:textColor="@color/light_gray"
+                        android:textColorHint="@color/light_gray"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/text_size_default"
+                        android:theme="@style/EditTextMaterialCursor"/>
+
+
+                    </LinearLayout>
+
+                <me.grantland.widget.AutofitTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_xxlarge"
+                    android:singleLine="true"
+                    fontPath="@string/font.poppins_bold"
+                    android:text="@string/sign_up_set_up_your_team"
+                    android:layout_gravity="center"
+                    android:textColor="@color/login_blue"
+                    android:textSize="@dimen/text_size_xlarge" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:layout_marginBottom="@dimen/margin_xlarge"
+                    android:paddingBottom="@dimen/margin_small"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <Button
+                        android:id="@+id/sign_up_btn_cancel"
+                        fontPath="@string/font.poppins_regular"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="@dimen/button_height_default"
+                        android:background="@drawable/btn_gray"
+                        android:textAllCaps="false"
+                        android:layout_marginRight="@dimen/margin_medium"
+                        android:text="@string/sign_up_cancel"
+                        android:textColor="@color/login_blue"
+                        android:textSize="@dimen/text_size_default" />
+
+                    <Button
+                        android:id="@+id/sign_up_btn_submit"
+                        fontPath="@string/font.poppins_regular"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="@dimen/button_height_default"
+                        android:layout_marginLeft="@dimen/margin_medium"
+                        android:background="@drawable/btn_blue"
+                        android:textAllCaps="false"
+                        android:text="@string/sign_up_next"
+                        android:textColor="@color/lighter_gray"
+                        android:textSize="@dimen/text_size_default" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

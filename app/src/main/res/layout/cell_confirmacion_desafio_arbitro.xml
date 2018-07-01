@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/item_container">
+
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_numero_nuevoDesafio_cell"
+        android:text="Desafio 20"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_ubicacion_nuevoDesafio_cell"
+        android:text="Ubicacion"
+        android:textSize="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/tv_ubicacion_nuevoDesafio_cell"
+        android:src="@drawable/ic_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_nombreEquipo1_nuevoDesafio_cell"
+        android:text="revolution team"
+        android:layout_below="@+id/tv_numero_nuevoDesafio_cell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RatingBar
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:progressTint="@color/yellow"
+        android:id="@+id/ratingbarEquipo1_nuevoDesafio_cell"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:layout_below="@+id/tv_nombreEquipo1_nuevoDesafio_cell"/>
+
+    <RelativeLayout
+        android:id="@+id/circle_vs_nuevoDesafio_cell"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/circle_vs_arbitro"
+        android:layout_alignBaseline="@+id/tv_nombreEquipo1_nuevoDesafio_cell"
+        android:layout_marginLeft="175dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="VS"
+            android:textColor="#fff" />
+
+
+    </RelativeLayout>
+
+
+
+
+    <TextView
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_nombreEquipo2_nuevoDesafio_cell"
+        android:text="revolution team"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_ubicacion_nuevoDesafio_cell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RatingBar
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:progressTint="@color/yellow"
+        android:id="@+id/ratingbarEquipo2_nuevoDesafio_cell"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_nombreEquipo2_nuevoDesafio_cell"
+        android:layout_alignParentRight="true"
+        android:numStars="5"/>
+
+    <TextView
+        android:id="@+id/tv_descripcion_arbitro"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ratingbarEquipo1_nuevoDesafio_cell"
+        android:layout_alignTop="@+id/ic_calendar_nuevoDesafio_cell"
+        android:text="Conectate con la cancha de la zona y definí el horario" />
+
+    <ImageView
+        android:id="@+id/ic_calendar_nuevoDesafio_cell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView3"
+
+        android:layout_toStartOf="@+id/ratingbarEquipo2_nuevoDesafio_cell"
+        android:src="@drawable/ic_date" />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20/07/2018"
+        android:layout_toRightOf="@+id/ic_calendar_nuevoDesafio_cell"
+        android:layout_below="@+id/ratingbarEquipo1_nuevoDesafio_cell"
+        android:id="@+id/textView3" />
+
+    <Button
+        android:id="@+id/bttn_tomarDesafio_nuevoDesafio_cell"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bttn_hora2_confirmacionDesafio_arbitro"
+        android:layout_alignBottom="@+id/bttn_hora2_confirmacionDesafio_arbitro"
+        android:layout_alignEnd="@+id/textView3"
+        android:background="@drawable/btn_blue"
+        android:text="confirmar"
+        android:textAllCaps="false"
+        android:textColor="@color/lighter_gray" />
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/bttn_hora1_confirmacionDesafio_arbitro"
+        android:layout_below="@+id/tv_descripcion_arbitro"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_gray"
+        android:textColor="@color/border_gray"
+        android:textAllCaps="false"
+        android:layout_marginBottom="20dp"
+        android:text="12:00 hs"/>
+    <Button
+        android:id="@+id/bttn_hora2_confirmacionDesafio_arbitro"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/bttn_hora1_confirmacionDesafio_arbitro"
+        android:layout_alignBaseline="@+id/bttn_hora1_confirmacionDesafio_arbitro"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_gray"
+        android:textColor="@color/border_gray"
+        android:textAllCaps="false"
+        android:text="16:00 hs"/>
+
+
+
+
+
+
+</RelativeLayout>

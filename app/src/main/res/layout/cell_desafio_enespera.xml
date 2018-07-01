@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+    <LinearLayout
+
+        android:id="@+id/container_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp">
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp">
+
+                <TextView
+                    android:id="@+id/tv_nombreDeEquipo_enEspera"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:text="Walter dada"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="#ce595858"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvPostUserLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="reputacion"
+                    android:textSize="15dp"
+                    android:visibility="visible"
+                    />
+                <RatingBar
+                    android:id="@+id/ratingbar_desafio_enEspera"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:progressTint="@color/yellow"
+
+                    android:layout_height="wrap_content"
+                    android:numStars="5"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_Ubicacion_enEspera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:layout_toLeftOf="@+id/ivType"
+                android:layout_marginEnd="10dp"
+                android:text="Lanus"
+                android:textSize="14dp"
+                android:layout_marginRight="10dp"
+                />
+            <ImageView
+                android:layout_toLeftOf="@+id/tv_Ubicacion_enEspera"
+                android:src="@drawable/ic_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/ivType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="3dp"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/calendar"
+                android:layout_marginLeft="5dp"
+                android:layout_alignBaseline="@+id/calendar"
+                android:id="@+id/tv_fecha_enEspera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="22/11/2017, 14:30HS,16HS,20HS"/>
+            <ImageView
+                android:layout_marginLeft="13dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/calendar"
+                android:src="@drawable/ic_calendar_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

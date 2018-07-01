@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:title="Desafios"
+            
+            />
+        <item
+            android:id="@+id/nav_gallery"
+            android:title="Partidos" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:title="Ranking" />
+        <item
+            android:id="@+id/nav_manage"
+            android:title="Equipo" />
+    </group>
+
+    <item android:title="">
+        <menu>
+
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_cuenta"
+                android:title="Mi cuenta" />
+        </menu>
+    </item>
+
+</menu>
